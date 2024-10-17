@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "AutoDraft AI",
+  "version": "1.0",
+  "description": "An email processing assistant.",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "storage",
+    "identity",
+    "nativeMessaging"
+  ],
+  "host_permissions": ["https://www.googleapis.com/*"],
+  "oauth2": {
+    "client_id": "582644854934-2fgrv374l5v8mhoft4ehk1m1kt15ob0h.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.modify",
+      "https://www.googleapis.com/auth/gmail.compose",
+      "openid",
+      "profile",
+      "email"
+    ],
+    "redirect_uris": ["chrome-extension://pglaahcoighijljpohjbphohlkkhlfnd/"]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon.ico",
+      "48": "favicon.ico",
+      "128": "favicon.ico"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

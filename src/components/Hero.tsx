@@ -29,8 +29,9 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
-
+          <a href="autodraft.zip" download>
+            <Button className="w-full md:w-1/3">Get Started</Button>
+          </a>
           <a
             rel="noreferrer noopener"
             href="https://github.com/leoMirandaa/shadcn-landing-page.git"
