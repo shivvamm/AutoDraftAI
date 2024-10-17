@@ -151,17 +151,7 @@ export const Footer = () => {
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 AutoDraft, made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
+        <h3>&copy; 2024 AutoDraft</h3>
       </section>
     </footer>
   );
