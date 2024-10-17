@@ -31,9 +31,9 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          "This service has transformed my workflow! The ease of use and
-          intuitive design have made a significant difference in my
-          productivity."
+          "This AI email assistant has revolutionized my communication! Its
+          smart suggestions and organization features have drastically improved
+          my response time and efficiency."
         </CardContent>
       </Card>
 
@@ -53,8 +53,9 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-            "The best tool I’ve used for project management! It has streamlined
-            our processes and allowed our team to collaborate seamlessly."
+            "The best tool I've used for managing emails! It has streamlined our
+            workflow and allowed our team to collaborate seamlessly, making our
+            communication effortless."
           </p>
         </CardContent>
 
