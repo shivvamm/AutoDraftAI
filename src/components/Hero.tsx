@@ -9,23 +9,23 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
+            <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
+              AutoDraft
             </span>{" "}
-            landing page
+            AI Email Assistant
           </h1>{" "}
           for{" "}
           <h2 className="inline">
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
+              Effortless Inbox Management
             </span>{" "}
-            developers
+            and Productivity
           </h2>
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
+          Manage your emails effortlessly with AI that drafts replies, detects
+          spam, and saves time.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
@@ -34,7 +34,7 @@ export const Hero = () => {
           </a>
           <a
             rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+            href="https://github.com/shivvamm/AutoDraftAI"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",

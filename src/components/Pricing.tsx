@@ -26,69 +26,60 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
-    popular: 0,
+    title: "Basic",
+    popular: PopularPlanType.NO,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Ideal for individuals looking to manage their emails effectively.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
+      "1 User account",
       "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Basic support",
+      "Email templates",
     ],
   },
   {
-    title: "Premium",
-    popular: 1,
-    price: 5,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+    title: "Professional",
+    popular: PopularPlanType.YES,
+    price: 15,
+    description: "Perfect for small teams seeking better email organization.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
+      "5 User accounts",
+      "10 GB Storage",
       "Priority support",
-      "lorem ipsum dolor",
+      "Advanced analytics",
     ],
   },
   {
     title: "Enterprise",
-    popular: 0,
-    price: 40,
+    popular: PopularPlanType.NO,
+    price: 50,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Best for larger organizations needing robust email management.",
+    buttonText: "Contact Us",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Unlimited User accounts",
+      "50 GB Storage",
+      "Dedicated support",
+      "Custom integrations",
     ],
   },
 ];
 
 export const Pricing = () => {
   return (
-    <section
-      id="pricing"
-      className="container py-24 sm:py-32"
-    >
+    <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Choose Your
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Email Management Plan{" "}
         </span>
-        Access
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Discover the perfect plan to simplify your email experience.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -104,10 +95,7 @@ export const Pricing = () => {
               <CardTitle className="flex item-center justify-between">
                 {pricing.title}
                 {pricing.popular === PopularPlanType.YES ? (
-                  <Badge
-                    variant="secondary"
-                    className="text-sm text-primary"
-                  >
+                  <Badge variant="secondary" className="text-sm text-primary">
                     Most popular
                   </Badge>
                 ) : null}
@@ -129,11 +117,8 @@ export const Pricing = () => {
             <CardFooter className="flex">
               <div className="space-y-4">
                 {pricing.benefitList.map((benefit: string) => (
-                  <span
-                    key={benefit}
-                    className="flex"
-                  >
-                    <Check className="text-green-500" />{" "}
+                  <span key={benefit} className="flex">
+                    <Check className="text-green-500" />
                     <h3 className="ml-2">{benefit}</h3>
                   </span>
                 ))}

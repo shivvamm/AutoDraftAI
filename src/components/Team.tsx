@@ -43,7 +43,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
+    name: "James Brown",
     position: "Tech Lead",
     socialNetworks: [
       {
@@ -69,7 +69,6 @@ const teamList: TeamProps[] = [
         name: "Linkedin",
         url: "https://www.linkedin.com/in/leopoldo-miranda/",
       },
-
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -108,20 +107,17 @@ export const Team = () => {
   };
 
   return (
-    <section
-      id="team"
-      className="container py-24 sm:py-32"
-    >
+    <section id="team" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          Meet Our Expert{" "}
         </span>
-        Crew
+        Team
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Our dedicated team is here to enhance your email experience and provide
+        exceptional support.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
@@ -144,7 +140,10 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                  Passionate about optimizing email communication and enhancing
+                  user experiences.
+                </p>
               </CardContent>
 
               <CardFooter>

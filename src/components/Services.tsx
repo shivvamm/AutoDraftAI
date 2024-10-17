@@ -10,21 +10,21 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Email Organization",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Efficiently manage your inbox with tools that help prioritize and categorize emails.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Automated Responses",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Set up custom automated replies to ensure prompt responses to common inquiries.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Email Analytics",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Gain insights into your email usage patterns and optimize your communication strategy.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -42,8 +42,8 @@ export const Services = () => {
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Enhance your email experience with our tailored services designed to
+            improve efficiency and communication.
           </p>
 
           <div className="flex flex-col gap-8">

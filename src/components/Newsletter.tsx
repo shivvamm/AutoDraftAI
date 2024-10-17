@@ -2,24 +2,26 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Subscribed!");
+    // Here you can add the logic to handle the email subscription
   };
 
   return (
-    <section id="newsletter">
-      <hr className="w-11/12 mx-auto" />
+    <section id="newsletter" className="bg-light p-8">
+      <hr className="w-11/12 mx-auto mb-8" />
 
-      <div className="container py-24 sm:py-32">
-        <h3 className="text-center text-4xl md:text-5xl font-bold">
+      <div className="container py-24 sm:py-32 text-center">
+        <h3 className="text-4xl md:text-5xl font-bold">
           Join Our Daily{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
             Newsletter
           </span>
         </h3>
-        <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+        <p className="text-xl text-muted-foreground mt-4 mb-8">
+          Stay updated with the latest tips and insights to enhance your email
+          management skills.
         </p>
 
         <form
@@ -27,15 +29,16 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="leomirandadev@gmail.com"
-            className="bg-muted/50 dark:bg-muted/80 "
+            placeholder="your-email@example.com"
+            className="bg-muted/50 dark:bg-muted/80"
             aria-label="email"
+            required
           />
-          <Button>Subscribe</Button>
+          <Button type="submit">Subscribe</Button>
         </form>
       </div>
 
-      <hr className="w-11/12 mx-auto" />
+      <hr className="w-11/12 mx-auto mt-8" />
     </section>
   );
 };

@@ -16,44 +16,45 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 export const HeroCards = () => {
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
-      {/* Testimonial */}
+      {/* Testimonial 1 */}
       <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
-            <AvatarImage
-              alt=""
-              src="https://github.com/shadcn.png"
-            />
-            <AvatarFallback>SH</AvatarFallback>
+            <AvatarImage alt="" src="profile.svg" />
+            <AvatarFallback>JD</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
+            <CardTitle className="text-lg">Abhishek Singh</CardTitle>
             <CardDescription>@john_doe</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>
+          "This service has transformed my workflow! The ease of use and
+          intuitive design have made a significant difference in my
+          productivity."
+        </CardContent>
       </Card>
 
-      {/* Team */}
+      {/* Testimonial 2 */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
+            src="profile.svg"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Suryajeet</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            UX Designer
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
+            "The best tool I’ve used for project management! It has streamlined
+            our processes and allowed our team to collaborate seamlessly."
           </p>
         </CardContent>
 
@@ -61,7 +62,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="https://github.com/shivvamm/AutoDraftAI"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -73,7 +74,7 @@ export const HeroCards = () => {
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/janesmith"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -94,7 +95,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
+              href="https://www.linkedin.com/in/janesmith/"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -109,14 +110,11 @@ export const HeroCards = () => {
       </Card>
 
       {/* Pricing */}
-      <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute top-[150px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
+            <Badge variant="secondary" className="text-sm text-primary">
               Most popular
             </Badge>
           </CardTitle>
@@ -126,7 +124,7 @@ export const HeroCards = () => {
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            Ideal for individuals or small teams just getting started.
           </CardDescription>
         </CardHeader>
 
@@ -138,13 +136,10 @@ export const HeroCards = () => {
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["4 Team members", "4 GB Storage", "Up to 6 pages"].map(
               (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
-                  <Check className="text-green-500" />{" "}
+                <span key={benefit} className="flex">
+                  <Check className="text-green-500" />
                   <h3 className="ml-2">{benefit}</h3>
                 </span>
               )
@@ -154,16 +149,16 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      <Card className="absolute w-[350px] -right-[10px] bottom-[35px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>Light & Dark Mode</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              Easily toggle between light and dark themes to fit your
+              preference.
             </CardDescription>
           </div>
         </CardHeader>

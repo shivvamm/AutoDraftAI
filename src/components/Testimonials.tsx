@@ -17,69 +17,65 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    name: "Alice Johnson",
+    userName: "@alice_j",
+    comment: "This email assistant has transformed the way I manage my inbox!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    name: "Bob Smith",
+    userName: "@bob_smith",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "I can't believe how much time I save every day. It's a game changer!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    name: "Catherine Lee",
+    userName: "@cathy_lee",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "The automation features are fantastic. My workflow is so much smoother now.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    name: "David Brown",
+    userName: "@david_brown",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "A must-have tool for anyone overwhelmed by emails. Highly recommend!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    name: "Emily Davis",
+    userName: "@emily_d",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The interface is so user-friendly. I love how easy it is to get started.",
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Frank Wilson",
+    userName: "@frank_w",
+    comment:
+      "Finally, an email assistant that understands my needs. It's made my life easier.",
   },
 ];
 
 export const Testimonials = () => {
   return (
-    <section
-      id="testimonials"
-      className="container py-24 sm:py-32"
-    >
+    <section id="testimonials" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold">
         Discover Why
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Users Love{" "}
         </span>
-        This Landing Page
+        Our Email Assistant
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Our users rave about how our email assistant simplifies their lives and
+        enhances productivity.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
           ({ image, name, userName, comment }: TestimonialProps) => (
             <Card
@@ -88,10 +84,7 @@ export const Testimonials = () => {
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
-                  <AvatarImage
-                    alt=""
-                    src={image}
-                  />
+                  <AvatarImage alt="" src={image} />
                   <AvatarFallback>OM</AvatarFallback>
                 </Avatar>
 
