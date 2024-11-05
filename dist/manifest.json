@@ -10,7 +10,10 @@
     "identity",
     "nativeMessaging"
   ],
-  "host_permissions": ["https://www.googleapis.com/*"],
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://oauth2.googleapis.com/*"
+  ],
   "oauth2": {
     "client_id": "582644854934-2fgrv374l5v8mhoft4ehk1m1kt15ob0h.apps.googleusercontent.com",
     "scopes": [
@@ -38,5 +41,8 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
 }

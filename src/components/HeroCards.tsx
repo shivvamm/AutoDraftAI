@@ -26,7 +26,7 @@ export const HeroCards = () => {
 
           <div className="flex flex-col">
             <CardTitle className="text-lg">Abhishek Singh</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardDescription>@Abhishek Singh</CardDescription>
           </div>
         </CardHeader>
 
@@ -125,7 +125,7 @@ export const HeroCards = () => {
           </div>
 
           <CardDescription>
-            Ideal for individuals or small teams just getting started.
+            Ideal for individuals looking to manage their emails effectively.{" "}
           </CardDescription>
         </CardHeader>
 
@@ -137,7 +137,7 @@ export const HeroCards = () => {
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team members", "4 GB Storage", "Up to 6 pages"].map(
+            {["1 User account", "Basic support", "Email templates"].map(
               (benefit: string) => (
                 <span key={benefit} className="flex">
                   <Check className="text-green-500" />
@@ -150,7 +150,7 @@ export const HeroCards = () => {
       </Card>
 
       {/* Service */}
-      <Card className="absolute w-[350px] -right-[10px] bottom-[35px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+      {/* <Card className="absolute w-[350px] -right-[10px] bottom-[35px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
           <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
             <LightBulbIcon />
@@ -163,7 +163,7 @@ export const HeroCards = () => {
             </CardDescription>
           </div>
         </CardHeader>
-      </Card>
+      </Card> */}
     </div>
   );
 };

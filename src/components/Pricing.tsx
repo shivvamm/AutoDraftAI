@@ -44,7 +44,7 @@ const pricingList: PricingProps[] = [
     popular: PopularPlanType.YES,
     price: 15,
     description: "Perfect for small teams seeking better email organization.",
-    buttonText: "Start Free Trial",
+    buttonText: "Comming Soon",
     benefitList: [
       "5 User accounts",
       "10 GB Storage",
